@@ -411,6 +411,12 @@ template {
   background-color: #ec1f46;
 }
 
+.search__button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 5px;
+          box-shadow: 1px 1px 5px;
+}
+
 .user {
   display: -webkit-box;
   display: -ms-flexbox;
