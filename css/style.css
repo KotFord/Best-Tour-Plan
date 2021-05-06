@@ -410,6 +410,7 @@ template {
 .navbar-menu__link {
   text-decoration: none;
   color: inherit;
+  text-transform: uppercase;
 }
 
 .logo {
