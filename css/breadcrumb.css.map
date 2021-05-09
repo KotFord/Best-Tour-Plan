@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACG,AAAD,gBAAM,CAAC;EACL,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,OAAO,EAAE,MAAM;EACf,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,IAAI;CAQK;;AAPpB,AAEG,sBAFG,AACJ,IAAK,CAAA,WAAW,CACd,OAAO,CAAC;EACP,OAAO,EAAE,GAAG;EACZ,YAAY,EAAE,GAAG;CAAG;;AACzB,AAAD,sBAAO,CAAC;EACN,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,OAAO;CAAG",
+    "sources": [
+        "../sass/blocks/breadcrumb.sass"
+    ],
+    "names": [],
+    "file": "breadcrumb.css"
+}
