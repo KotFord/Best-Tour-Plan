@@ -528,6 +528,7 @@ template {
 .hotel-info__name {
   margin-top: 4px;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .hotel-info__description {
