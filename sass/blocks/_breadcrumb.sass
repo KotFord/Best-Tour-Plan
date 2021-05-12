@@ -11,5 +11,16 @@
           content: '/'
           margin-right: 4px
     &__link
+      position: relative
       text-decoration: none
       color: inherit
+      &:before
+        content: ''
+        width: 100%
+        position: absolute
+        bottom: -3px
+        border-bottom: solid 1px $dark
+        transition: 0.4s
+        transform: scaleX(0)
+      &:hover::before
+        transform: scale(1)

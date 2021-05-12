@@ -532,8 +532,26 @@ template {
 }
 
 .breadcrumb-list__link {
+  position: relative;
   text-decoration: none;
   color: inherit;
+}
+
+.breadcrumb-list__link:before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  bottom: -3px;
+  border-bottom: solid 1px #0a223d;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.breadcrumb-list__link:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .hotel {
