@@ -438,6 +438,10 @@ template {
   width: 177px;
 }
 
+.logo__image:hover {
+  width: 110%;
+}
+
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,6 +496,11 @@ template {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.user__avatar:hover {
+  -webkit-box-shadow: 1px 1px 5px;
+          box-shadow: 1px 1px 5px;
 }
 
 .user__name {
