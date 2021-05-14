@@ -1,5 +1,8 @@
 .navbar
   background-color: $light
+  &__user
+    &:hover
+      box-shadow: 1px 1px 5px
   &-top
     display: flex
     align-items: center
@@ -80,12 +83,8 @@
     height: 40px
     border-radius: 50%
     object-fit: cover
-    &:hover
-      box-shadow: 1px 1px 5px
   &__name
     margin-left: 18px
     font-size: 14px
     line-height: 18px
     color: $text-color
-    &:hover
-      text-shadow: 1px 1px 2px black
