@@ -31,3 +31,4 @@ ymaps.ready(init);
             zoom: 15
         });
     }
+

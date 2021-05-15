@@ -1,12 +1,11 @@
 .newsletter
-  position: relative
   padding: 98px 0 87px 0
-  background-image: url(../img/newsletter-bg.jpg)
   background-repeat: no-repeat
   background-size: cover
   background-position: center
-  font-family: Mulish;
-
+  font-family: Mulish
+  z-index: 10
+  background-color: rgba($dark, 0.8)
   &:before
     content: ''
     position: absolute
@@ -16,7 +15,7 @@
     left: 0
     width: 100%
     height: 100%
-    background-color: rgba($dark, 0.8)
+    
   &-wrapper
     position: relative
     display: flex
@@ -37,7 +36,7 @@
       text-transform: uppercase;
 .subscribe
   position: relative
-  width: 355px
+  width: 350px
   height: 55px
   border-radius: 4px
   overflow: hidden
