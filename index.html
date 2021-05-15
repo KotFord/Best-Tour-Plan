@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Best Tour Plan - Hotel Booking</title>
 </head>
-<body>
+<body class="parallax">
   <header class="navbar">
     <div class="container">
       <div class="navbar-top">
@@ -144,16 +144,18 @@
       </div>
     </div>
   </section>
-  <section class="newsletter">
-    <div class="newsletter-wrapper">
-      <h2 class="newsletter-title newsletter__title">
-        subscribe to our
-        <span class="newsletter-title__strong">Newsletter</span>
-      </h2>
-      <form action="#" class="subscribe newsletter__subscribe">
-        <input type="text" class="subscribe__input" placeholder="Your email address">
-        <button class="subscribe__button hover-button">Send</button>
-      </form>
+  <section class="parallax-window" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
+    <div class="newsletter">
+      <div class="newsletter-wrapper">
+        <h2 class="newsletter-title newsletter__title">
+          subscribe to our
+          <span class="newsletter-title__strong">Newsletter</span>
+        </h2>
+        <form action="#" class="subscribe newsletter__subscribe">
+          <input type="text" class="subscribe__input" placeholder="Your email address">
+          <button class="subscribe__button hover-button">Send</button>
+        </form>
+      </div>
     </div>
   </section>
   <section class="reviews">
@@ -203,6 +205,12 @@
       </div>  
     </div>
   </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
+
+
   <script src="js/swiper-bundle.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
   </script>
