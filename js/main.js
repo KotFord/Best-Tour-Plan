@@ -1,9 +1,22 @@
-const swiper = new Swiper('.swiper-container', {
+const hotelSlider = new Swiper('.hotel-slider', {
   loop: true,
 
   navigation: {
-    nextEl: '.slider-button--next',
-    prevEl: '.slider-button--prev',
+    nextEl: '.hotel-slider__button--next',
+    prevEl: '.hotel-slider__button--prev',
+  },
+  effect: "coverflow",
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});
+const reviewsSlider = new Swiper('.reviews-slider', {
+  loop: true,
+
+  navigation: {
+    nextEl: '.reviews-slider__button--next',
+    prevEl: '.reviews-slider__button--prev',
   },
 
   keyboard: {
