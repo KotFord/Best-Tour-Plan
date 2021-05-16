@@ -519,6 +519,10 @@ template {
   padding: 18px 0;
   margin: 0;
   list-style: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
 }
 
 .breadcrumb-list__item:not(:last-child)::after {
@@ -859,17 +863,6 @@ template {
   background-color: rgba(10, 34, 61, 0.8);
 }
 
-.newsletter:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .newsletter-wrapper {
   position: relative;
   display: -webkit-box;
@@ -1205,6 +1198,10 @@ template {
   .navbar-menu__link:before {
     border: none;
   }
+  .navbar__user:hover .user__name {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
   .hover-button:hover {
     background-color: #ec1f46;
   }
@@ -1244,9 +1241,7 @@ template {
   .activities-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  .activities__card {
-    margin-bottom: 20px;
+    gap: 10px;
   }
   .card {
     width: 340px;
@@ -1338,10 +1333,10 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 576px;
-    width: 92;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    width: 92%;
   }
   .reviews__title {
     margin-bottom: 50px;
@@ -1373,7 +1368,7 @@ template {
   }
   .activities {
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top-margin-bottom: 36px;
   }
   .card {
     width: 49%;
@@ -1388,17 +1383,14 @@ template {
   .hotel__slider {
     margin-bottom: 20px;
   }
-  .hotel-slider {
-    height: 250px;
+  .hotel-right {
+    min-height: 440px;
   }
   .newsletter {
     padding: 76px 0 83px 0;
   }
   .newsletter__title {
     margin-bottom: 37px;
-  }
-  .newsletter-wrapper {
-    max-width: 350px;
   }
   .subscribe {
     width: 100%;
@@ -1408,11 +1400,17 @@ template {
     line-height: 23px;
     margin-bottom: 43px;
   }
+  .activities {
+    padding-top: 20px;
+  }
   .activities__title {
     font-size: 18px;
   }
   .card {
     width: 100%;
+  }
+  .booking {
+    padding: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

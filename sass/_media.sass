@@ -31,6 +31,11 @@
         line-height: 15px
         &:before
           border: none
+    &__user
+      &:hover
+        .user
+          &__name
+            box-shadow: none
   .hover-button
     &:hover
       background-color: $primary
@@ -62,8 +67,7 @@
   .activities
     &-wrapper
       flex-wrap: wrap
-    &__card
-      margin-bottom: 20px
+      gap: 10px
   .card
     width: 340px
     height: 255px
@@ -121,8 +125,8 @@
     &-wrapper
       flex-direction: column
       max-width: 576px
-      width: 92
       align-items: flex-start
+      width: 92%
   .reviews
     &__title
       margin-bottom: 50px
@@ -146,7 +150,7 @@
       line-height: 38px;
   .activities
     padding-top: 40px
-    padding-bottom: 60px
+     margin-bottom: 36px
   .card
     width: 49%
     height: 255px
@@ -156,14 +160,12 @@
   .hotel
     &__slider
       margin-bottom: 20px
-    &-slider
-      height: 250px
+    &-right
+      min-height: 440px
   .newsletter
     padding: 76px 0 83px 0
     &__title
       margin-bottom: 37px
-    &-wrapper
-      max-width: 350px
   .subscribe
     width: 100%
   .reviews
@@ -172,10 +174,12 @@
       line-height: 23px;
       margin-bottom: 43px
   .activities
+    padding-top: 20px
     &__title
       font-size: 18px;
   .card
     width: 100%
-
+  .booking
+    padding: 20px
   
   
