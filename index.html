@@ -284,13 +284,14 @@
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
             <a href="#" class="footer__link">
-              <img src="img/fb.svg" alt="Icon = facebook" class="footer__icon">
+              <div class="footer__icon-wrapper"></div>
+              <img src="img/fb.svg" alt="Icon = facebook">
             </a>
             <a href="#" class="footer__link">
-              <img src="img/yt.svg" alt="Icon = youtoobe" class="footer__icon">
+              <img src="img/yt.svg" alt="Icon = youtoobe">
             </a>
             <a href="#" class="footer__link">
-              <img src="img/inst.svg" alt="Icon = instagram" class="footer__icon">
+              <img src="img/inst.svg" alt="Icon = instagram">
             </a>
           </div>
         </div>
@@ -308,43 +309,62 @@
           </ul>
         </div>
         <div class="footer__contact-details">
-          <h3 class="footer__title">Contact Details</h3>
+          <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
           <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
           <ul class="footer__ul">
-            <li class="footer__item">
-              <img src="img/map.svg" alt="Icon: map">
+            <li class="footer__item footer__item--mb-2">
+              <div class="footer__icon-wrapper">
+                <img class="footer__icon" src="img/map.svg" alt="Icon: map">
+              </div>
               9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
             </li>
-            <li class="footer__item">
-              <img src="img/phone.svg" alt="Icon: phone">
+            <li class="footer__item footer__item--mb-2">
+              <div class="footer__icon-wrapper">
+                <img class="footer__icon" src="img/phone.svg" alt="Icon: phone">
+              </div>
               Tel (business hours) : 269 1500 <br>
               Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
               Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
             </li>
-            <li class="footer__item">
-              <img src="img/email.svg" alt="Icon: email">
+            <li class="footer__item footer__item--mb-2">
+              <div class="footer__icon-wrapper">
+                <img class="footer__icon" src="img/email.svg" alt="Icon: email">
+              </div>
               cherly.lawson@example.com
             </li>
           </ul>
         </div>
         <div class="footer__contact-form">
-          <h3 class="footer__title"></h3>
+          <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
           <form action="#" class="footer__form">
             <input type="text" class="input footer__input" placeholder="Your Full Name*">
 
             <input type="text" class="input footer__input" placeholder="Phone Number*">
 
-            <textarea class="footer__masseg" cols="30" rows="10"
-            placeholder="">
+            <textarea class="footer__message" cols="30" rows="10"
+            placeholder="Message">
             </textarea>
-            <button class="button footer__button" type="submit">Send</button>
+            <button class="button footer__button hover-button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form
         </div>
+        
       </div>
+          <div class="footer__disclaimer">
+            <ul class="footer__ul footer__ul--horizontal">
+              <li class="footer__item-under">Disclaimer</li>
+              <li class="footer__item-under">Conditions of use</li>
+              <li class="footer__item-under">Cancellation policy</li>
+            </ul>
+          </div>
+          <div class="footer__pay-card">
+            <img src="img/pay_cards.svg" alt="">
+          </div>
     </div>
   </footer>
-
+  
+  
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
 
