@@ -131,7 +131,7 @@
             <div class="booking__call-center">
               <span class="booking__heading">Quick Booking</span>
               <a href="tel:12100" class="booking__number">
-                <img src="img/phone.svg" alt="phone">
+                <img src="img/booking-phone.svg" alt="phone">
                 <span class="booking__num">12100</span>
               </a>
             </div>
@@ -284,14 +284,22 @@
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
             <a href="#" class="footer__link">
-              <div class="footer__icon-wrapper"></div>
-              <img src="img/fb.svg" alt="Icon = facebook">
+              <div class="footer__icon-wrapper">
+                <img src="img/fb.svg" alt="Icon = facebook">
+              </div>
+              
             </a>
             <a href="#" class="footer__link">
-              <img src="img/yt.svg" alt="Icon = youtoobe">
+              <div class="footer__icon-wrapper">
+                <img src="img/yt.svg" alt="Icon = youtoobe">
+              </div>
+              
             </a>
             <a href="#" class="footer__link">
-              <img src="img/inst.svg" alt="Icon = instagram">
+              <div class="footer__icon-wrapper">
+                <img src="img/inst.svg" alt="Icon = instagram">
+              </div>
+              
             </a>
           </div>
         </div>
@@ -344,21 +352,25 @@
             <textarea class="footer__message" cols="30" rows="10"
             placeholder="Message">
             </textarea>
-            <button class="button footer__button hover-button" type="submit">Send</button>
-            <span class="footer__info">* Required Fields</span>
+            <div class="footer__media-wrapper">
+              <button class="button footer__button hover-button" type="submit">Send</button>
+              <p class="footer__info">* Required Fields</p>
+            </div>
           </form
         </div>
         
       </div>
-          <div class="footer__disclaimer">
-            <ul class="footer__ul footer__ul--horizontal">
-              <li class="footer__item-under">Disclaimer</li>
-              <li class="footer__item-under">Conditions of use</li>
-              <li class="footer__item-under">Cancellation policy</li>
-            </ul>
-          </div>
-          <div class="footer__pay-card">
-            <img src="img/pay_cards.svg" alt="">
+          <div class="footer__buttom-wrapper">
+            <div class="footer__disclaimer">
+              <ul class="footer__ul footer__ul--horizontal">
+                <li class="footer__item-under">Disclaimer</li>
+                <li class="footer__item-under">Conditions of use</li>
+                <li class="footer__item-under">Cancellation policy</li>
+              </ul>
+            </div>
+            <div class="footer__pay-card">
+              <img src="img/pay_cards.svg" alt="">
+            </div>
           </div>
     </div>
   </footer>
