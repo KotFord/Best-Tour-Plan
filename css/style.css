@@ -1589,6 +1589,11 @@ template {
   body {
     padding-top: 78px;
   }
+  .scroll--mobile--off {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+  }
   .navbar--mobile--fixed {
     position: fixed;
     top: 0;
@@ -1772,6 +1777,9 @@ template {
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+  .search__input {
+    width: 300px;
   }
   .hotel__slider {
     margin-bottom: 20px;
