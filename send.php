@@ -11,20 +11,6 @@ $message = $_POST['message'];
 $YourEmail = $_POST['YourEmail'];
 
 // Формирование самого письма
-/* if ($name = null) {
-    $title = "Новое обращение Best Tour Plan";
-    $body = "
-    <h2>Новое обращение</h2>
-    <b>Почта:</b> $YourEmail<br><br>
-    ";  
-}   $title = "Новое обращение Best Tour Plan";
-    $body = "
-    <h2>Новое обращение</h2>
-    <b>Имя:</b> $name<br>
-    <b>Телефон:</b> $phone<br>
-    <b>Сообщение:</b><br>$message
-    ";
- */
 $title = "Новое обращение Best Tour Plan";
 $body = "
 <h2>Новое обращение</h2>

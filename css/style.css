@@ -18,6 +18,37 @@ img {
   max-width: 100%;
 }
 
+.input {
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 0 23px;
+  height: 50px;
+}
+
+.message {
+  width: 100%;
+  height: 123px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 18px 23px;
+  border: none;
+}
+
+.button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  background-color: #ec1f46;
+  border: none;
+  border-radius: 4px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1265,8 +1296,8 @@ template {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
-  margin: 0 0 16px 0;
   text-transform: uppercase;
+  margin: 0 0 16px 0;
 }
 
 .footer__title--inline {
@@ -1318,40 +1349,15 @@ template {
 }
 
 .footer__input {
-  background-color: #fff;
-  border-radius: 4px;
-  border: none;
-  padding: 0 23px;
-  height: 50px;
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
 }
 
 .footer__message {
-  width: 100%;
-  height: 123px;
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 18px 23px;
-  border: none;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 23px;
-}
-
-.footer__button {
-  min-width: 160px;
-  min-height: 50px;
-  padding: 18px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  color: #fff;
-  background-color: #ec1f46;
-  border: none;
-  border-radius: 4px;
 }
 
 .footer__media-wrapper {
@@ -1410,6 +1416,65 @@ template {
   -ms-grid-column-span: 1;
   grid-column: 4 / 5;
   padding-right: 20px;
+}
+
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+}
+
+.modal__dialog {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  max-width: 478px;
+  padding: 33px 88px;
+  background-color: #0a223d;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  border-radius: 8px;
+  z-index: 101;
+}
+
+.modal__close {
+  position: absoslute;
+  right: 18px;
+  top: 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.modal__input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal__message {
+  margin-bottom: 15px;
+}
+
+.modal__info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
 }
 
 @media (max-width: 1200px) {

@@ -376,11 +376,8 @@
             placeholder="Phone Number*"
             name = "phone">
 
-            <textarea
-            class="footer__message" 
-            placeholder="Message"
-            name = "message">
-            </textarea>
+            <textarea class="message footer__message"placeholder="Message"name="message"></textarea>
+
             <div class="footer__media-wrapper">
               <button class="button footer__button hover-button" type="submit">Send</button>
               <p class="footer__info">* Required Fields</p>
@@ -403,7 +400,38 @@
       </div>
     </div>
   </footer>
-  
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="">
+      </a>
+      <h3 class="modal__title modal__title--mb-3">Send us a message</h3>
+      <form action="send.php" method="POST" class="modal__form">
+        <input 
+          type="text" 
+          class="input modal__input" 
+          placeholder="Your Full Name*"
+          name = "name">
+
+        <input 
+        type="text" 
+        class="input modal__input" 
+        placeholder="Phone Number*"
+        name = "phone">
+
+        <input 
+          type="text" 
+          class="input modal__input" 
+          placeholder="Email"
+          name = "YourEmail">
+
+        <textarea class="message modal__message"placeholder="Message"name="message"></textarea>
+          <button class="button modal__button hover-button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+      </form>
+    </div>
+  </div>
   
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
