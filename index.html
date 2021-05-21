@@ -101,7 +101,7 @@
           </div>
           <p class="hotel-description hotel-info__description">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
         </div>
-        <div class="rating hotel-info__rating">
+        <div data-toggle="modal" data-href="#rating-modal" class="rating hotel-info__rating">
           <span class="rating__text">User Rattings</span>
           <span class="rating__counter">4.5/5</span>
         </div>
@@ -149,7 +149,7 @@
                 <span class="booking__num">12100</span>
               </a>
             </div>
-            <button class="buttom booking__buttom hover-button">View Other Options</button>
+            <button data-toggle="modal" data-href="#booking-modal" class="buttom booking__button hover-button">View Other Options</button>
           </div>
           <div class="map">
             <div id="map" style="width: 100%; height: 213px"></div>
@@ -400,13 +400,13 @@
       </div>
     </div>
   </footer>
-  <div class="modal">
+  <div class="modal" id="booking-modal">
     <div class="modal__overlay"></div>
     <div class="modal__dialog">
       <a href="#" class="modal__close">
-        <img src="img/close.svg" alt="">
+        <img src="img/close.svg" alt="Закрыть окно">
       </a>
-      <h3 class="modal__title modal__title--mb-3">Send us a message</h3>
+      <h3 class="modal__title modal__title--mb-3">Booking</h3>
       <form action="send.php" method="POST" class="modal__form">
         <input 
           type="text" 
@@ -427,13 +427,47 @@
           name = "YourEmail">
 
         <textarea class="message modal__message"placeholder="Message"name="message"></textarea>
+
+          <button class="button modal__button hover-button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+      </form>
+    </div>
+  </div>
+  <div class="modal" id="rating-modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="Закрыть окно">
+      </a>
+      <h3 class="modal__title modal__title--mb-3">Send us a feedback</h3>
+      <form action="send.php" method="POST" class="modal__form">
+        <input 
+          type="text" 
+          class="input modal__input" 
+          placeholder="Your Full Name*"
+          name = "name">
+
+        <input 
+        type="text" 
+        class="input modal__input" 
+        placeholder="Phone Number*"
+        name = "phone">
+
+        <input 
+          type="text" 
+          class="input modal__input" 
+          placeholder="Email"
+          name = "YourEmail">
+
+        <textarea class="message modal__message"placeholder="Message"name="message"></textarea>
+
           <button class="button modal__button hover-button" type="submit">Send</button>
           <span class="modal__info">* Required Fields</span>
       </form>
     </div>
   </div>
   
-  
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
 
