@@ -49,6 +49,18 @@ img {
   border-radius: 4px;
 }
 
+.scroll--modal--off {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.scroll--navbar--off {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1496,6 +1508,14 @@ template {
   color: #E0E0E0;
 }
 
+.modal__button {
+  margin-right: 30px;
+}
+
+.modal__info {
+  white-space: nowrap;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1663,6 +1683,12 @@ template {
     padding-top: 22px;
     padding-right: 0;
   }
+  .modal__dialog {
+    padding: 33px 48px;
+  }
+  .modal__button {
+    margin-bottom: 12px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1672,11 +1698,6 @@ template {
   }
   body {
     padding-top: 78px;
-  }
-  .scroll--mobile--off {
-    overflow: hidden;
-    position: relative;
-    height: 100vh;
   }
   .navbar--mobile--fixed {
     position: fixed;

@@ -34,31 +34,34 @@ $(document).ready(function () {
       }
   
   var menuButton = document.querySelector(".menu-button");
-  menuButton.addEventListener("click", function () {
-    document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
-  })
-  menuButton.addEventListener("click", function () {
-    document.querySelector("body").classList.toggle("scroll--mobile--off");
-  });
-  
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
-  modalButton.on("click", openModal);
+  var scrollOff = $("body");
   closeModalButton.on("click", closeModal);
+  modalButton.on("click", openModal);
 
+  menuButton.addEventListener("click", function () {
+    document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
+    document.querySelector("body").classList.toggle("scroll--navbar--off");
+  });
   
+
   function openModal() {
     var targetModal = $(this).attr("data-href");
     $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
     $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
-  }
+    scrollOff.addClass("scroll--modal--off");
+  };
+ 
   function closeModal(e) {
     e.preventDefault();
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
-  }
+    scrollOff.removeClass("scroll--modal--off");
+  };
+
   $(document).keydown(function(e){
     console.log(e);
     if (e.code === "Escape") {
