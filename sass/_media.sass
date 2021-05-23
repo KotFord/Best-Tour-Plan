@@ -331,8 +331,20 @@
     &__media-wrapper
       flex-direction: column-reverse
       align-items: start
+@media only screen and (max-height : 370px)
   .modal
+    &__overlay
+      &--visible
+        overflow-y: scroll
     &__dialog
-      
+      &--visible
+        height: 315px
+        overflow-y: scroll
+  .navbar
+    &-bottom
+      &--visible
+        overflow-y: scroll
+
+
 
   

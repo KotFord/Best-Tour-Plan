@@ -50,7 +50,8 @@ $(document).ready(function () {
     var targetModal = $(this).attr("data-href");
     $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
     $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
-    scrollOff.addClass("scroll--modal--off");
+    scrollOff.addClass("scroll--modal--off")
+    
   };
  
   function closeModal(e) {
