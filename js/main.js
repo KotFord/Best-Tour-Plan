@@ -90,8 +90,8 @@ $(document).ready(function () {
       },
     });
   })
-  /* $(".form").ready(function(){
-    $('.phone_us').mask('(000) 000-0000');
-  });   */
+
+  AOS.init();
+
 
 });

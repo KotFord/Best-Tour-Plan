@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Best Tour Plan - Hotel Booking</title>
 </head>
@@ -14,16 +15,16 @@
   <header class="navbar navbar--mobile--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="#" class="logo" data-aos="fade-down">
           <img src="img/horizontal-logo.svg" alt="Best Tour Plan" class="logo__image">
         </a>
-        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden" data-aos="fade-down">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button hover-button">
             <img src="img/search.png" alt="Icon: search">
           </button>
         </form>
-        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-down">
           <img src="img/user-avatar.png" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -101,7 +102,7 @@
           </div>
           <p class="hotel-description hotel-info__description">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
         </div>
-        <div data-toggle="modal" data-href="#rating-modal" class="rating hotel-info__rating">
+        <div class="rating hotel-info__rating" data-aos="fade-left" data-toggle="modal" data-href="#rating-modal">
           <span class="rating__text">User Rattings</span>
           <span class="rating__counter">4.5/5</span>
         </div>
@@ -190,7 +191,7 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                <img src="img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar" data-aos="flip-left">
                 <h3 class="reviews-slider__username">Megan Fox</h3>
                 <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                 <div class="reviews-slider__rating">
@@ -209,7 +210,7 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="img/avatar-robert.jpg" alt="Photo: Robert Neville" class="reviews-slider__avatar">
+                <img src="img/avatar-robert.jpg" alt="Photo: Robert Neville" class="reviews-slider__avatar" data-aos="flip-left">
                 <h3 class="reviews-slider__username">Robert Neville</h3>
                 <span class="reviews-slider__date">Stayed 24 Dec, 2018</span>
                 <div class="reviews-slider__rating">
@@ -233,28 +234,28 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card"data-aos="zoom-in-right" data-aos-delay="100">
           <img src="img/activity-1.jpg" alt="The curious corner 
           of chamarel" class="card__image">
           <h3 class="card__title">The curious corner 
             of chamarel</h3>
           <button class="card__button hover-button">Book Now</button>
         </div>
-        <div class="card activities__card">
+        <div class="card activities__card"data-aos="zoom-in-right" data-aos-delay="300">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf
           course" class="card__image">
           <h3 class="card__title">Gymkhana club golf
             course</h3>
           <button class="card__button hover-button">Book Now</button>
         </div>
-        <div class="card activities__card">
+        <div class="card activities__card"data-aos="zoom-in-right" data-aos-delay="500">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking
           trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking
             trip - full day</h3>
           <button class="card__button hover-button">Book Now</button>
         </div>
-        <div class="card activities__card">
+        <div class="card activities__card"data-aos="zoom-in-right" data-aos-delay="700">
           <img src="img/activity-4.jpg" alt="The blue marine discovery
           quest" class="card__image">
           <h3 class="card__title">The blue marine discovery
@@ -267,7 +268,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+        <a class="logo footer__logo" href="#"><img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" data-aos="flip-down"></a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES</h3>
           <ul class="footer__ul">
@@ -492,8 +493,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
-<script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU">
   </script>
   <script src="js/main.js"></script>
