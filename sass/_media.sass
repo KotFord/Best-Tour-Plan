@@ -12,8 +12,9 @@
     width: 230px
     height: 230px
   .footer
-    &__input
-      flex-basis: 100%
+    &-group
+      &__input
+        flex-basis: 100%
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -79,7 +80,8 @@
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
     &__input
-      flex-basis: 49%
+      &__group
+        flex-basis: 48%
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
@@ -246,7 +248,8 @@
   .footer
     padding-top: 73px
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media (max-width: 576px)
   
   .logo
@@ -339,21 +342,7 @@
     &__dialog
       &--visible
         height: 315px
-        width: 100%
-        padding: 23px 33px;
-    &__input
-      height: 30px
-      margin-bottom: 5px
-    &__title
-      margin-top: 0
-      margin-bottom: 5px
-    &__message
-      margin-bottom: 5px
-      height: 100px
-    &__button
-      min-height: 30px
-      padding: 0
-      margin-right: 140px
+        overflow-y: scroll
   .navbar
     &-bottom
       &--visible

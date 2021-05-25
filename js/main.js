@@ -70,4 +70,23 @@ $(document).ready(function () {
     }
   })
 
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Укажите имя",
+          minlength: "Имя должно быть не меньше 2 букв",
+        },
+        email: {
+          required: "Укажите Email",
+          email: "Ваш email адресс должен быть в формате name@domain.com"
+        },
+        phone: {
+          required: "Укажите телефон",
+        },
+      },
+    });
+  })
+
 });

@@ -61,6 +61,11 @@ img {
   height: 100vh;
 }
 
+.invalid {
+  color: #ec1f46;
+  border-bottom: 1px solid #ec1f46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -950,7 +955,6 @@ template {
 }
 
 .subscribe__input {
-  position: absolute;
   width: 100%;
   height: 100%;
   border: none;
@@ -1362,7 +1366,11 @@ template {
 }
 
 .footer__input {
-  margin-bottom: 15px;
+  width: 100%;
+}
+
+.footer__input-group {
+  margin-top: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
 }
@@ -1370,6 +1378,7 @@ template {
 .footer__message {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  margin-top: 15px;
   margin-bottom: 23px;
 }
 
@@ -1493,10 +1502,11 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
@@ -1533,7 +1543,7 @@ template {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer-group__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1619,9 +1629,9 @@ template {
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
   }
-  .footer__input {
-    -ms-flex-preferred-size: 49%;
-        flex-basis: 49%;
+  .footer__input__group {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1873,7 +1883,7 @@ template {
   .footer {
     padding-top: 73px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2027,25 +2037,7 @@ template {
   }
   .modal__dialog--visible {
     height: 315px;
-    width: 100%;
-    padding: 23px 33px;
-  }
-  .modal__input {
-    height: 30px;
-    margin-bottom: 5px;
-  }
-  .modal__title {
-    margin-top: 0;
-    margin-bottom: 5px;
-  }
-  .modal__message {
-    margin-bottom: 5px;
-    height: 100px;
-  }
-  .modal__button {
-    min-height: 30px;
-    padding: 0;
-    margin-right: 140px;
+    overflow-y: scroll;
   }
   .navbar-bottom--visible {
     overflow-y: scroll;
