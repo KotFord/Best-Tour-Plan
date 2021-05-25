@@ -166,15 +166,18 @@
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
         <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
-          <input 
+          <div class="newsletter__input-wrappper">
+            <input 
             type="email" 
             class="subscribe__input" 
             placeholder="Your email address"
             name = "email"
             required>
-          
+          </div>
+          <div class="newsletter__button-wrappper">
+            <button class="subscribe__button hover-button">Send</button>
+          </div>
 
-          <button class="subscribe__button hover-button">Send</button>
         </form>
       </div>
     </div>
