@@ -71,22 +71,27 @@ $(document).ready(function () {
   })
 
   $(".form").each(function () {
+    $('.phone_us').mask('+7 (000) 000-0000');
     $(this).validate({
       errorClass: "invalid",
       messages: {
         name: {
-          required: "Укажите имя",
-          minlength: "Имя должно быть не меньше 2 букв",
+          required: "Please specify your name",
+          minlength: "The name must be at least 2 characters",
         },
         email: {
-          required: "Укажите Email",
-          email: "Ваш email адресс должен быть в формате name@domain.com"
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
         },
         phone: {
-          required: "Укажите телефон",
+          required: "Please specify your phone",
+          
         },
       },
     });
   })
+  /* $(".form").ready(function(){
+    $('.phone_us').mask('(000) 000-0000');
+  });   */
 
 });
