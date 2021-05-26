@@ -1331,7 +1331,7 @@ template {
 }
 
 .footer__title--mb-3 {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .footer__item {
@@ -1380,7 +1380,7 @@ template {
 
 .footer__input-group {
   position: relative;
-  margin-top: 15px;
+  margin-top: 25px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
 }
@@ -2046,9 +2046,6 @@ template {
     grid-row: 2;
     text-align: start;
     padding-top: 10px;
-  }
-  .footer__message {
-    margin-bottom: 10px;
   }
   .footer__media-wrapper {
     -webkit-box-orient: vertical;
