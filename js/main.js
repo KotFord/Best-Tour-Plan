@@ -85,6 +85,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Please specify your phone",
+          minlength: "Enter full phone number",
           
         },
       },

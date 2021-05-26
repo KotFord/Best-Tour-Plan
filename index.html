@@ -167,14 +167,14 @@
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
         <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
-          <div class="newsletter__input-wrappper">
-            <input 
-            type="email" 
-            class="subscribe__input" 
-            placeholder="Your email address"
-            name = "email"
-            required>
-          </div>
+
+          <input 
+          type="email" 
+          class="subscribe__input" 
+          placeholder="Your email address"
+          name = "email"
+          required>
+
           <div class="newsletter__button-wrappper">
             <button class="subscribe__button hover-button">Send</button>
           </div>
@@ -422,27 +422,36 @@
       </a>
       <h3 class="modal__title modal__title--mb-3">Booking</h3>
       <form action="send.php" method="POST" class="modal__form form">
-        <input 
+        <div class="modal__input-group">
+          <input 
           type="text" 
           class="input modal__input" 
           placeholder="Your Full Name*"
           name = "name"
           required
           minlength = "2">
-
-        <input 
+        </div>
+        <div class="modal__input-group">
+          <input 
           type="tel" 
           class="input modal__input phone_us" 
           placeholder="Phone Number*"
           name = "phone"
-          required>
-
-        <input 
+          required
+          minlength = "17">
+        </div>
+        <div class="modal__input-group">
+          <input 
           type="email" 
           class="input modal__input" 
           placeholder="YourEmail*"
           name = "email"
           required>
+        </div>
+
+        
+
+        
 
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
 
@@ -459,27 +468,31 @@
       </a>
       <h3 class="modal__title modal__title--mb-3">Send us a feedback</h3>
       <form action="send.php" method="POST" class="modal__form form">
-        <input 
+        <div class="modal__input-group">
+          <input 
           type="text" 
           class="input modal__input" 
           placeholder="Your Full Name*"
           name = "name"
           required
           minlength = "2">
-
-        <input 
+        </div>
+        <div class="modal__input-group">
+          <input 
           type="tel" 
           class="input modal__input phone_us" 
           placeholder="Phone Number*"
           name = "phone"
           required>
-
-        <input 
+        </div>
+        <div class="modal__input-group">
+          <input 
           type="email" 
           class="input modal__input" 
           placeholder="YourEmail*"
           name = "email"
           required>
+        </div>
 
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
 
