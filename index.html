@@ -4,11 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
-    rel="stylesheet"
-  >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
@@ -155,9 +151,12 @@
             </div>
             <button data-toggle="modal" data-href="#booking-modal" class="buttom booking__button hover-button">View Other Options</button>
           </div>
-          <div class="map">
-            <div id="map" style="width: 100%; height: 213px"></div>
+          
+          <div class="ymap-container">
+            <div class="loader loader-default"></div>
+            <div id="map-yandex"></div>
           </div>
+
         </div>
       </div>
     </div>
@@ -514,7 +513,6 @@
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/aos.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
