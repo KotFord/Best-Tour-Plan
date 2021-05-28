@@ -25,13 +25,6 @@ $(document).ready(function () {
       onlyInViewport: false,
     },
   });
- /*  ymaps.ready(init);
-      function init(){
-          var myMap = new ymaps.Map("map", {
-              center: [43.57597775, 39.72587285],
-              zoom: 15
-          });
-      } */
   
   var menuButton = document.querySelector(".menu-button");
   var modalButton = $("[data-toggle=modal]");
@@ -71,7 +64,7 @@ $(document).ready(function () {
   })
 
   $(".form").each(function () {
-    $('.phone_us').mask('+7 (000) 000-0000');
+    $('.phone-us').mask('+7 (000) 000-0000');
     $(this).validate({
       errorClass: "invalid",
       messages: {
@@ -95,12 +88,7 @@ $(document).ready(function () {
   AOS.init();
 
 
-});
-
-
-
-
-//Переменная для включения/отключения индикатора загрузки
+  //Переменная для включения/отключения индикатора загрузки
 var spinner = $('.ymap-container').children('.loader');
 //Переменная для определения была ли хоть раз загружена Яндекс.Карта (чтобы избежать повторной загрузки при наведении)
 var check_if_load = false;
@@ -221,3 +209,5 @@ $(function() {
   ymap();
  
 });
+});
+

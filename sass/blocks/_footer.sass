@@ -6,13 +6,13 @@
   &-wrapper
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
-    grid-gap: 20px
-    grid-auto-rows: minmax(40px, min-content)
+    grid-gap: 30px
+    grid-auto-rows: minmax(30px, min-content)
     align-items: start
   &__logo
     width: 166px
     grid-row: 1 / 3
-    align-self: stretch
+    align-self: center
   &__categories
     grid-row: 1 / 4
   &__social
@@ -55,7 +55,7 @@
     &--inline
       margin: 0 43px 0 0
     &--mb-3
-      margin-bottom: 25px
+      margin-bottom: 15px
   &__item
     display: flex
     align-items: flex-start
@@ -74,7 +74,7 @@
       margin-bottom: 20px
   &__icon
     &-wrapper
-      min-width: 40px
+      min-width: 30px
   &__text
     color: $footer-text-color
     margin-bottom: 22px
@@ -118,6 +118,10 @@
       text-align: end
       grid-column: 4 / 5
       padding-right: 20px
+  &__legal
+    display: grid
+    justify-items: end
+
 .footer__form label
   position: absolute
   flex-basis: content
