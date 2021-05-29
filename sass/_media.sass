@@ -358,6 +358,43 @@
     &__media-wrapper
       flex-direction: column-reverse
       align-items: start
+
+@media (max-width: 320px)
+  .hotel
+    padding-top: 0
+    padding-bottom: 40px
+    &-slider
+      height: 179px
+    &-info
+      padding-bottom: 35px
+    &-right
+      min-height: 405px
+  .stars
+    flex-basis: 20%
+    text-align: end
+  .booking
+    padding: 29px 21px 26px 21px
+  #map-yandex
+    height: 173px
+  .newsletter
+    padding: 50px 0 80px 0
+  
+  .reviews
+    padding-top: 30px
+    padding-bottom: 55px
+    &-slider
+      &__button
+        &--prev
+          margin-left: -90px
+        &--next
+          margin-right: -90px
+  .activities
+    &__title
+      margin-bottom: 35px
+    &-wrapper
+      gap: 20px
+
+
 @media only screen and (max-height : 370px)
   .modal
     &__overlay
