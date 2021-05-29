@@ -14,16 +14,16 @@
   <header class="navbar navbar--mobile--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="#" class="logo" data-aos="fade-down">
           <img src="img/horizontal-logo.svg" alt="Best Tour Plan" class="logo__image">
         </a>
-        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden" data-aos="fade-down">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button hover-button">
             <img src="img/search.png" alt="Icon: search">
           </button>
         </form>
-        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-down">
           <img src="img/user-avatar.png" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -35,7 +35,7 @@
       </div>
     </div>
     <nav class="navbar-bottom">
-      <div class="container">
+      <div class="container container--mobile">
         <ul class="navbar-menu">
           <li class="navbar-menu__item navbar-menu__item--mobile--visible">
             <a href="#" class="user navbar__user navbar__user--mobile--visible">
@@ -69,16 +69,23 @@
       </div>
     </nav>
   </header>
+
+
+
   <div class="container">
-    <H2>Сообщение отправленно. Спасибо за обращение!</H2>
+    <H2>The message has been sent. Thank you for contacting us!</H2>
   </div>
   
+
+
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+        <a class="logo footer__logo" href="#">
+          <img class="footer__logo--size" src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" data-aos="flip-down">
+        </a>
         <div class="footer__list footer__categories">
-          <h3 class="footer__title">ALL CATEGORIES</h3>
+          <h3 class="footer__title">ALL&nbspCATEGORIES</h3>
           <ul class="footer__ul">
             <li class="footer__item"><a href="#" class="footer__link"> All Deals</a></li>
             <li class="footer__item"><a href="#" class="footer__link"> Hotels</a></li>
@@ -137,7 +144,8 @@
           </div>
         </div>
         <div class="footer__list footer__legal">
-          <h3 class="footer__title">LEGAL INFORMATION</h3>
+          <div class="footer__title-wrapper">
+            <h3 class="footer__title">LEGAL&nbspINFORMATION</h3>
           <ul class="footer__ul">
             <li class="footer__item"><a href="#" class="footer__link">  Terms & Conditions</a>
             </li>
@@ -148,9 +156,10 @@
             <li class="footer__item"><a href="#" class="footer__link">  Privacy</a>
             </li>
           </ul>
+          </div>
         </div>
         <div class="footer__contact-details">
-          <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
+          <h3 class="footer__title footer__title--mb-3 footer__title--mt-3">Contact Details</h3>
           <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
           <ul class="footer__ul">
             <li class="footer__item footer__item--mb-2">
@@ -177,24 +186,30 @@
         </div>
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input 
-            type="text" 
-            class="input footer__input" 
-            placeholder="Your Full Name*"
-            name = "name">
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group">
+              <input 
+              type="text" 
+              class="input footer__input" 
+              placeholder="Your Full Name*"
+              name = "name"
+              required
+              minlength = "2">
+            </div>
+            <div class="footer__input-group">
+              <input 
+              type="tel" 
+              class="input footer__input phone-us" 
+              placeholder="Phone Number*"
+              name = "phone"
+              required
+              minlength = "17">
+            </div>
 
-            <input 
-            type="text" 
-            class="input footer__input" 
-            placeholder="Phone Number*"
-            name = "phone">
+            
 
-            <textarea
-            class="footer__message" 
-            placeholder="Message"
-            name = "message">
-            </textarea>
+            <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
+
             <div class="footer__media-wrapper">
               <button class="button footer__button hover-button" type="submit">Send</button>
               <p class="footer__info">* Required Fields</p>
@@ -205,9 +220,9 @@
           <div class="footer__buttom-wrapper">
             <div class="footer__disclaimer">
               <ul class="footer__ul footer__ul--horizontal">
-                <li class="footer__item-under"><a href="#" class="footer__link">Disclaimer</a></li>
-                <li class="footer__item-under"><a href="#" class="footer__link">Conditions of use</a></li>
-                <li class="footer__item-under"><a href="#" class="footer__link">Cancellation policy</a></li>
+                <li class="footer__item-under"><a href="#" class="footer__link footer__link--button-line">Disclaimer</a></li>
+                <li class="footer__item-under"><a href="#" class="footer__link footer__link--button-line">Conditions of use</a></li>
+                <li class="footer__item-under"><a href="#" class="footer__link footer__link--button-line">Cancellation policy</a></li>
               </ul>
             </div>
             <div class="footer__pay-card">
@@ -220,13 +235,13 @@
   
   
   
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
-
-
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU">
-  </script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
