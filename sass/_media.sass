@@ -144,10 +144,6 @@
         grid-column: 5 / 6
         padding-top: 15px
         padding-right: 0
-    &__link
-      &--button-line
-        &:before
-          border: none 
     &__ul
       padding-top: 5px
   .modal
@@ -159,7 +155,9 @@
     width: 340px   
   .logo
     width: 99px
-@media (max-width: 767px)
+  .buttom-line
+    &:before
+      border: none
   .container
     max-width: 576px
     width: 92%
@@ -332,6 +330,7 @@
     &__additional
       grid-row: 4
       grid-column: 1
+      padding-left: 0
     &__categories
       grid-row: 5
       grid-column: 1
