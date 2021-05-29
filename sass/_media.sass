@@ -21,8 +21,11 @@
     &--mobile
       padding-left: 15px
       padding-right: 15px
-  .newsletter-wrapper
-    max-width: 700px
+  .newsletter
+    padding-top: 72px
+    padding-bottom: 74px
+    &-wrapper
+      max-width: 700px
   .logo
     width: 132px
   .navbar
@@ -56,7 +59,7 @@
         &:before
            border: none     
   .hotel
-    padding-bottom: 60px
+    padding-bottom: 55px
     &-grid
       flex-direction: column  
     &__slider
@@ -69,6 +72,7 @@
     width: 340px
     padding: 28px 22px 26px 22px
   .reviews
+    padding-top: 14px
     &__title
       font-size: 30px
       line-height: 38px
@@ -78,18 +82,20 @@
         max-width: 580px
   .activities
     padding-top: 30px
-    padding-bottom: 80px
+    padding-bottom: 70px
     &-wrapper
       flex-wrap: wrap
-      gap: 10px
+      gap: 20px
   .card
     width: 340px
     height: 255px
+    padding-right: 110px
   .footer
     padding-top: 80px
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
-      grid-column-gap: 28px
+      grid-column-gap: 38px
+      grid-row-gap: 40px
     &__input
       &__group
         flex-basis: 48%
@@ -112,6 +118,7 @@
     &__additional
       grid-row: 2 / 3
       grid-column: 2 / 5
+      padding-left: 15px
     &__contact
       &-details
         grid-column: span 5
@@ -120,11 +127,12 @@
         grid-column: 1 / 6
         grid-row: 4
         padding-right: 50px
+        padding-top: 10px
     &__disclaimer
       justify-content: start
       grid-row: 5 / 6
       grid-column: 1 / 4
-      padding-top: 25px
+      padding-top: 15px
     &__buttom-wrapper
       grid-column: 1 / 7
       padding-top: 0
@@ -134,12 +142,14 @@
         text-align: end
         grid-row: 5 / 6
         grid-column: 5 / 6
-        padding-top: 22px
+        padding-top: 15px
         padding-right: 0
     &__link
       &--button-line
         &:before
           border: none 
+    &__ul
+      padding-top: 5px
   .modal
     &__dialog
       padding: 33px 48px
@@ -147,8 +157,9 @@
       margin-bottom: 12px
   .ymap-container
     width: 340px   
-
-@media (max-width: 768px)
+  .logo
+    width: 99px
+@media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
@@ -276,9 +287,6 @@
   .ymap-container
     width: 100%
 @media (max-width: 576px)
-  
-  .logo
-    width: 99px
   .search
    &__input
      width: 300px
@@ -380,7 +388,7 @@
     padding: 50px 0 80px 0
   
   .reviews
-    padding-top: 30px
+    padding-top: 28px
     padding-bottom: 55px
     &-slider
       &__button
@@ -389,20 +397,47 @@
         &--next
           margin-right: -90px
   .activities
+    padding-top: 22px
     padding-bottom: 60px
     &__title
       margin-bottom: 35px
     &-wrapper
       gap: 20px
+  .card
+    padding-right: 50px
+  .order-1
+    order: 1
+  .order-2
+    order: 3
+  .order-3
+    order: 2
+  .order-4
+    order: 4
   .footer
+    &-wrapper
+      grid-row-gap: 30px
     &__title
       &--mb-3
         margin-bottom: 0
+        margin-top: 5px
     &__contact
       &-form
         padding-right: 0
+        padding-top: 15px
     &__message
       margin-bottom: 10px
+    &__additional
+      padding-left: 0
+    &__icon
+      &-wrapper
+        padding-left: 0
+        min-width: 30px
+    &__input
+      &-group
+        margin-top: 15px
+    &__ul
+      &--horizontal
+        padding-top: 0
 
 @media only screen and (max-height : 370px)
   .modal

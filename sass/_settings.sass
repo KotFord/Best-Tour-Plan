@@ -7,6 +7,10 @@ body
 .container
   max-width: 1110px
   margin: auto
+  &-thankyou
+    text-align: center
+    padding-top: 70px
+    padding-bottom: 70px
 img
   max-width: 100%
 .input
@@ -48,6 +52,15 @@ img
 .invalid
   color: $primary
   border-bottom: 1px solid $primary
-.link-feedback
+.buttom-line
   text-decoration: none
-  color: inherit
+  &:before
+    content: ''
+    width: 100%
+    position: absolute
+    bottom: -1px
+    border-bottom: solid 1px $light
+    transition: 0.4s
+    transform: scaleX(0)
+  &:hover::before
+    transform: scale(1)
