@@ -26,8 +26,6 @@
     padding-bottom: 74px
     &-wrapper
       max-width: 700px
-  .logo
-    width: 132px
   .navbar
     &-top
       padding-top: 30px
@@ -100,6 +98,7 @@
       &__group
         flex-basis: 48%
     &__logo
+      width: 99px
       grid-row: 1 / 2
       grid-column: 1 / 2
       &--size
@@ -133,6 +132,9 @@
       grid-row: 5 / 6
       grid-column: 1 / 4
       padding-top: 15px
+    &__title
+      &-wrapper
+        left: -18px
     &__buttom-wrapper
       grid-column: 1 / 7
       padding-top: 0
@@ -152,9 +154,7 @@
     &__button
       margin-bottom: 12px
   .ymap-container
-    width: 340px   
-  .logo
-    width: 99px
+    width: 340px
   .buttom-line
     &:before
       border: none
@@ -220,7 +220,7 @@
         height: 1px
         background-color: $text-color
   .stars
-    flex-basis: 50%
+    flex-basis: 10%
     text-align: end
   .hotel
     &-name
@@ -385,8 +385,17 @@
   #map-yandex
     height: 173px
   .newsletter
-    padding: 50px 0 80px 0
-  
+    padding: 70px 0 76px 0
+    &-title
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 25px;
+      &__strong
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 38px;
   .reviews
     padding-top: 28px
     padding-bottom: 55px
@@ -438,7 +447,14 @@
     &__ul
       &--horizontal
         padding-top: 0
-
+    &__title
+      &-wrapper
+        position: relative
+        left: 0
+    &__social
+      &-links
+        margin-bottom: 28px
+    
 @media only screen and (max-height : 370px)
   .modal
     &__overlay
