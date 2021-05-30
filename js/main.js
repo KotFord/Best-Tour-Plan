@@ -13,7 +13,7 @@ $(document).ready(function () {
     },
   });
   const reviewsSlider = new Swiper('.reviews-slider', {
-    //autoHeight: true,
+    autoHeight: true,
     loop: true,
     navigation: {
       nextEl: '.reviews-slider__button--next',
