@@ -70,15 +70,15 @@ $(document).ready(function () {
       errorClass: "invalid",
       messages: {
         name: {
-          required: "Please specify your name",
+          required: "Please indicate your name",
           minlength: "The name must be at least 2 characters",
         },
         email: {
-          required: "We need your email address to contact you",
-          email: "Email format of name@domain.com",
+          required: "Please indicate your email",
+          email: "Format of name@domain.com",
         },
         phone: {
-          required: "Please specify your phone",
+          required: "Please indicate your phone",
           minlength: "Enter full phone number",
           
         },

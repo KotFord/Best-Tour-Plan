@@ -15,12 +15,14 @@
     margin: auto
   &-title
     color: $light
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 30px;
+    font-style: normal
+    font-weight: 300
+    font-size: 24px
+    line-height: 30px
     &__strong
       display: block
+      font-style: normal;
+      font-weight: 600;
       font-size: 36px;
       line-height: 45px;
       text-transform: uppercase;
@@ -41,6 +43,8 @@
     line-height: 18px;
     background-color: #fff
     border-radius: 4px
+    &::placeholder
+      color: #BDBDBD
   &__button
     position: absolute
     min-width: 65px
@@ -51,6 +55,10 @@
     background-color: $primary
     color: $light
     border-radius: 0 4px 4px 0
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
 .subscribe label
   position: relative
   top: 60px

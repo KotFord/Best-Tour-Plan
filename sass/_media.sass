@@ -136,7 +136,6 @@
       &-form
         grid-column: 1 / 6
         grid-row: 4
-        padding-right: 50px
         padding-top: 10px
     &__disclaimer
       justify-content: start
@@ -302,6 +301,9 @@
   .ymap-container
     width: 100%
 @media (max-width: 576px)
+  .modal
+    &__dialog
+      padding: 15px 24px
   .search
    &__input
      width: 300px
@@ -389,6 +391,9 @@
       align-items: start
 
 @media (max-width: 320px)
+  .modal
+    &__dialog
+      //padding: 8px 15px
   .logo
     width: 99px
   .hotel
@@ -409,6 +414,8 @@
     height: 173px
   .newsletter
     padding: 76px 0 79px 0
+    &-wrapper
+      max-width: 280px
     &-title
       margin: auto
       margin-left: 0
