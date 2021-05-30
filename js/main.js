@@ -13,8 +13,8 @@ $(document).ready(function () {
     },
   });
   const reviewsSlider = new Swiper('.reviews-slider', {
+    //autoHeight: true,
     loop: true,
-  
     navigation: {
       nextEl: '.reviews-slider__button--next',
       prevEl: '.reviews-slider__button--prev',
@@ -26,6 +26,7 @@ $(document).ready(function () {
     },
   });
   
+
   var menuButton = document.querySelector(".menu-button");
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
