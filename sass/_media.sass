@@ -363,6 +363,9 @@
   .modal
     &__dialog
       padding: 15px 24px
+  .navbar
+    &__search
+      margin: auto
   .search
    &__input
      width: 300px
@@ -392,8 +395,13 @@
     width: 100%
   .booking
     padding: 20px
-  
-
+  .footer
+    &__contact
+      &-form
+        padding-right: 20px
+    &__input
+      &-group
+        flex-basis: 100%
 @media (max-width: 320px)
   .container
     max-width: 280px
@@ -401,8 +409,6 @@
     &-top
       padding-top: 28px;
       padding-bottom: 26px;
-    &__search
-      margin: auto
   .search
     &__input
       width: 243px
@@ -413,6 +419,14 @@
     padding-bottom: 40px
     &-slider
       height: 179px
+      &__button
+        top: 51%
+        width: 10px
+        height: 10px
+        &--next
+          right: 11px
+        &--prev
+          left: 9px
     &-info
       padding-bottom: 35px
     &-right
@@ -483,7 +497,7 @@
         margin-top: 5px
     &__contact
       &-form
-        padding-right: 0
+        padding-right: 20px
         padding-top: 15px
     &__message
       margin-bottom: 10px
@@ -496,7 +510,6 @@
     &__input
       &-group
         margin-top: 15px
-        flex-basis: 100%
     &__ul
       &--horizontal
         padding-top: 0
