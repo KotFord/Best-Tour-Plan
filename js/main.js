@@ -58,7 +58,6 @@ $(document).ready(function () {
   };
 
   $(document).keydown(function(e){
-    console.log(e);
     if (e.code === "Escape") {
       closeModal(e);
     }
@@ -71,7 +70,7 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "Please indicate your name",
-          minlength: "The name must be at least 2 characters",
+          minlength: "less then 2 chars",
         },
         email: {
           required: "Please indicate your email",
