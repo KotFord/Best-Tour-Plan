@@ -1,4 +1,11 @@
+.place-scroll
+  margin-left: calc(100vw - 100%)
+  margin-right: 0
 .modal
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
   &__overlay
     position: fixed
     left: 0
@@ -47,10 +54,14 @@
   &__input
     width: 100%
     margin-bottom: 15px
+    &::placeholder
+      color: #BDBDBD
     &-group
       position: relative
   &__message
     margin-bottom: 15px
+    &::placeholder
+      color: #BDBDBD
   &__info
     font-style: normal
     font-weight: bold
